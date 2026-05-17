@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>custos_perception_mock</name>
+  <version>0.1.0</version>
+  <description>Mock perception node that satisfies the same custos-interfaces contract as custos-novatek-sdk-wrapper. Used by public CI and local development without the proprietary SDK.</description>
+  <maintainer email="opensource@custos.dev">Custos Perception</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>lifecycle_msgs</depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>custos_common_msgs</depend>
+  <depend>custos_perception_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

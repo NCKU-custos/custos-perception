@@ -12,7 +12,6 @@ Workspace-wide rules and state caveats live at `../CLAUDE.md` (= `/space/drone/C
 
 - Single package today: `custos_perception_mock` (`package.xml`, `CMakeLists.txt`, empty `src/`). No real implementation yet.
 - The mock will eventually be joined by real vision-pipeline packages here (sensor fusion, detection, tracking).
-- **Brace-expansion litter:** there is a literal directory named `{.github` alongside the real `.github/`. Do not stage it.
 
 ## Cross-repo edges
 
@@ -42,6 +41,5 @@ ros2 launch custos_perception_mock mock.launch.py   # TODO: launch file unwritte
 - Wrapper counterpart: `custos-novatek-sdk-wrapper/custos_novatek_wrapper/`
 - Wire types: `custos-interfaces/custos_perception_msgs/`
 
-> TODO(post-first-commit): delete the `{.github` litter directory before the initial commit.
 > TODO(post-active): write the mock implementation and the launch file.
 > TODO(post-active): list real vision-pipeline packages here once they exist; expect detection, tracking, sensor-fusion sub-packages.
